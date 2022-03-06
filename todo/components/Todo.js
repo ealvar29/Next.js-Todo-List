@@ -65,3 +65,5 @@ const Todo = ({ todo, onDelete }) => {
     </li>
   );
 };
+
+export default Todo;
