@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../lib/initSupabase";
-
+import Todo from "../components/Todo";
+import Alert from "../components/Alert";
 export default function Todos({ user }) {
   const [todos, setTodos] = useState([]);
   const [newTaskText, setNewTaskText] = useState("");
