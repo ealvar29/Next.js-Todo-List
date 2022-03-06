@@ -29,6 +29,7 @@ export default function Todos({ user }) {
       if (error) setError(error.message);
       else setTodos([...todos, todo]);
     }
+    setNewTaskText("");
   };
 
   const deleteTodo = async (id) => {
