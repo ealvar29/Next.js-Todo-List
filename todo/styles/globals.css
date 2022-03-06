@@ -1,6 +1,10 @@
 @tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
 @tailwind components;
-@tailwind utilities;
+/* Stop purging. */
 
 /* Write your own custom component styles here */
 .btn-black {
@@ -16,6 +20,12 @@
   @apply transition duration-150 bg-black text-white;
 }
 
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
 html,
 body,
 #__next {
@@ -27,4 +37,12 @@ h1 {
   font-size: 4rem;
   font-weight: bold;
   display: block;
+}
+
+.sbui-typography-link {
+  @apply text-black font-normal !important;
+}
+
+span {
+  @apply text-black font-normal !important;
 }
